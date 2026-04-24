@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rewear | Pledge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <nav>
+      <a class="logo" href="index.html">Rewear<span>.</span></a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="messages.html">Messages</a>
+        <a class="active" href="pledge.html">Pledge</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="panel">
+        <p class="eyebrow">Join the Movement</p>
+        <h1>Take the <span style="color:var(--accent)">Rewear Pledge</span></h1>
+        <p>Over <strong>200 students</strong> on this campus have already committed to mindful fashion this semester. Add your name — your pledge is visible, public, and part of a growing movement.</p>
+        <div class="pledge-stats">
+          <div class="pledge-stat"><span>214</span> pledges signed</div>
+          <div class="pledge-stat"><span>6</span> swap events hosted</div>
+          <div class="pledge-stat"><span>400+</span> garments rehomed</div>
+        </div>
+      </section>
+
+      <section class="panel form-wrap">
+        <h2>Sign the Pledge</h2>
+        <form id="pledgeForm">
+          <label>
+            Your Name
+            <input type="text" name="name" placeholder="e.g. Alex Rivera" required />
+          </label>
+          <label>
+            Campus Email
+            <input type="email" name="email" placeholder="you@university.edu" required />
+          </label>
+          <label>
+            I pledge to…
+            <select name="pledge" required>
+              <option value="">Choose your commitment</option>
+              <option>Buy second-hand before buying new.</option>
+              <option>Rewear outfits proudly and publicly.</option>
+              <option>Attend or host a monthly clothing swap.</option>
+              <option>Repair an item instead of replacing it.</option>
+              <option>Share the Rewear message with 5 friends.</option>
+            </select>
+          </label>
+          <label>
+            Share why (optional)
+            <textarea name="why" rows="3" placeholder="What's your reason for joining?"></textarea>
+          </label>
+          <button type="submit">Sign &amp; Join the Revolution</button>
+        </form>
+        <p id="success" aria-live="polite"></p>
+      </section>
+
+      <section class="panel">
+        <h2>What Happens Next</h2>
+        <div class="grid three-col">
+          <div class="next-step">
+            <div class="step-num">1</div>
+            <p>You receive a confirmation and a shareable digital badge.</p>
+          </div>
+          <div class="next-step">
+            <div class="step-num">2</div>
+            <p>We add you to the campus Rewear network and notify you of upcoming swap events.</p>
+          </div>
+          <div class="next-step">
+            <div class="step-num">3</div>
+            <p>Your pledge counts toward our semester goal of 500 — helping us demonstrate impact to campus leadership.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>(c) 2026 Rewear Revolution</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
